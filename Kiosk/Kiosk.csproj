@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF44B51B-B17C-4F6E-95AC-5E8281261962}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kiosk</RootNamespace>
+    <AssemblyName>Kiosk</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOrderFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrderFrm.Designer.cs">
+      <DependentUpon>AddOrderFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitoringFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonitoringFrm.Designer.cs">
+      <DependentUpon>MonitoringFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberOrderFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberOrderFrm.Designer.cs">
+      <DependentUpon>NumberOrderFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueControllerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueueControllerFrm.Designer.cs">
+      <DependentUpon>QueueControllerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewOrderFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewOrderFrm.Designer.cs">
+      <DependentUpon>ReviewOrderFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddOrderFrm.resx">
+      <DependentUpon>AddOrderFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitoringFrm.resx">
+      <DependentUpon>MonitoringFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberOrderFrm.resx">
+      <DependentUpon>NumberOrderFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QueueControllerFrm.resx">
+      <DependentUpon>QueueControllerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewOrderFrm.resx">
+      <DependentUpon>ReviewOrderFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLATE-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dine In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Take-Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Take-Out-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ORDERHERE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dine-In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dine-In1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Take-Out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Take-Out-Mo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOME-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOME-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOME-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cakes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cakes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bread1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake1-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COPYCAKES1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_menu-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake1-removebg-preview150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake1-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cake1-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pastry1-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pastry1-180..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sugar Cake-180.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sugar Cake-1801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple Pie-180.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pastry2-180.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minusSign.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minusSign1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plusSign.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\+-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numberContainer.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineForAddRemoveBtn.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineForAddRemoveBtnNew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineForAddRemoveBtn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveSign.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitor-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
